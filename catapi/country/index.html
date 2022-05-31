@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .country-container {
+            font-family: Roboto, sans-serif;
+            background-color: crimson;
+            width: 224px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: rgb(59 45 45 / 25%) 0px 5px 15px;
+
+        }
+
+        .country-flag {
+            height:175px;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+
+        .country-spec {
+            padding: 10px;
+
+        }
+
+        .country-name {
+            margin-top: 0;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .country-container span {
+            font-weight: bold;
+
+        }
+        /* .country-list{
+            display:flex;
+            flex-wrap: wrap;
+            gap:15px; */
+        /* } */
+        /* .country-container:nth-child(4){
+            width:400px;
+        } */
+        
+
+        /* img{
+            opacity:0.15;
+        } */
+
+        /* 1fr -->fractional unit */
+/* mobile first approach */
+        .country-list{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            /* grid-template-columns: repeat(3,1fr); */
+            /* grid-template-columns: 1fr; */
+            justify-items: center;
+            gap: 15px;
+            row-gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="country-container">
+        <img  class="country-flag"src="https://upload.wikimedia.org/wikipedia/commons/7/7b/India_flag_300.png " alt=""/>
+        <div class="country-spec">
+        
+        <h2 class="country-name">India</h2>
+        <p><span>Population:</span>1,394,975,829</p>
+        <p><span>Region:</span>Asia</p>
+        <p><span>Capital:</span>New delhi</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
